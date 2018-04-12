@@ -1,0 +1,121 @@
+/*implement flipping when scrolling*/
+
+body {
+	position: relative;
+	margin: 0px;
+}
+
+.nav {
+	position: fixed;
+	/*background-color: green;*/
+	background: rgba(0, 150, 0, 0.5);
+	z-index: 99;
+	width: 10%;
+	height: 100%;
+}
+
+.navLinks {
+	position: relative;
+	list-style-type: none;
+}
+
+.links img {
+	position: relative;
+	/*border: 2px solid red;*/
+	margin-bottom: 50%;
+	border-radius: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.navLinks li {
+	padding-bottom: 30%;
+}
+
+.social {
+	position: relative;
+	left: 25%;
+	transform: translateX(-75%);
+}
+
+.links {
+	position: relative;
+	float: inline-block;
+	font-size: 1.75em;
+	top: 20%;
+	/*transform: translateY(-60%);*/
+}
+
+.links a {
+	padding-right: 20px;
+	text-decoration: none;
+	color: black;
+	vertical-align: center;
+}
+
+
+.splash {
+	/*background-color: red;*/
+	background-image: url("https://images.unsplash.com/photo-1498910265115-9fb541931cd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b93ef63d91fab0386964e7e1ed2a971e&auto=format&fit=crop&w=1989&q=80");
+}
+
+#intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*box-shadow: 5px 10px 10px;*/
+	font-family: 'Proza Libre', serif;
+	font-size: 1.5em;
+}
+
+#intro h6 {
+	position: relative;
+	left: 50%;
+	font-family: 'Cormorant Garamond';
+	font-size: 1.25em;
+	margin-top: 10px;
+}
+
+.about {
+	/*max-height: 100vh;*/
+}
+
+#gwg {
+	height: 200px;
+	width: 200px;
+}
+
+.page {
+	position: relative;
+	height: 100vh;
+	max-height: 100vh;
+	max-width: 90%;
+	left: 10%;
+}
+
+.ewsod {
+	height: 300px;
+	width: 500px;
+}
+
+.contactLinks {
+	position: absolute;
+	list-style-type: none;
+	left: 25%;
+	top: 50%;
+	transform: translate(-75%, -50%);
+}
+
+.contactLinks li {
+	padding-bottom: 25%;
+}
+
+.contactLinks li i {
+	margin: auto 75px auto auto;
+}
+
+.contactLinks li a {
+	text-decoration: none;
+	color: inherit;
+}
