@@ -7,20 +7,20 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 </head>
 <body>
-	<div class="nav">
+	<nav>
 		<div class="links">
 			<img src="./0.jpg" alt="profile-image"/>
-			<ul class="navLinks">
-				<li><a href="#home">Home</a></li>
+			<ul id="navLinks">
+				<li class="active"><a href="#home">Home</a></li>
 				<li><a href="#aboutMe">About Me</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<li><a href="#projectsPage">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 				<i class="fab fa-facebook-square social"></i>
 				<i class="fab fa-linkedin social"></i>
 				<i class="fas fa-envelope social"></i>
 		</div>
-	</div>
+	</nav>
 	<a id="home"></a>
 	<div class="splash page"> 
 		<div id="intro">
@@ -36,23 +36,51 @@
 			<ul>
 				<li>HTML</li>
 				<li>CSS</li>
-				<li>Javascript</li>
-				<li>jQuery</li>
+				<li>Javascript (jQuery/React)</li>
 			</ul>
 			<h3>Education</h3>
 			<ul>
 				<li>B.S. in Computer Science from New York Institute of Technology</li>
-				<li>Udacity Grow with Google Scholarship <span> <img id="gwg" src="https://s3-us-west-2.amazonaws.com/udacity-email/Scholarships/GrowWithGoogleDeveloperChallengeScholarship.png?utm_medium=email&utm_campaign=sch_600_auto_ndxxx_accepted-gwg&utm_source=blueshift&utm_content=sch_600_auto_ndxxx_accepted-gwg&bsft_eid=0278905a-c28b-4a40-852e-38bdcbd095b7&bsft_clkid=efc1967f-1e0e-4aaf-83b1-5f70e4cb2db2&bsft_uid=aabba383-3bb6-4b2d-ae15-a281eb273f6c&bsft_mid=704a3d7d-193e-441e-b5fb-31f17bbd3852&bsft_txnid=2cc00394-ab66-4713-84bd-f305ea270652" alt="Udacity-Badge"></span></li>
+				<li>Udacity Front End Web Developer Nanodegree</li>
 			</ul>
 		</div>
+		<a id="projectsPage"></a>
 	</div>
-	<a id="projects"></a>
-	<div class="projects page" style="overflow: hidden;">
-		<a href="EastWest/index.html"><img class="ewsod" src="img/Screenshot_4.jpg"/></a>
-		<p>Mock up website for East West School of Dance</p>
-		<a href="https://codepen.io/omoosey/full/RMoVvE/"><img class="ewsod" src="img/Screenshot_2.jpg"/></a>
-		<br>
-	</div>
+	<section class="featured page">
+			<h2>Featured Work</h2>
+			<section class="projects">
+				<div class="projectPreview myReads">
+					<img srcset="img/myreads-360w.jpg 360w,
+								 img/myreads-780w.jpg 780w,
+								 img/myreads-1024w.jpg 1024w"
+						 sizes="(max-width: 360px) 340px,
+						 		(max-width: 765px) 745px,
+						 		1024px" 
+						 src="img/myreads-1024w.jpg" alt="my_reads_project">
+					<p>My Reads Project - <a href="https://omoosey.github.io/reactnd-project-myreads-starter/">Link</a></p>
+				</div>
+				<div class="projectPreview neighborhoodMap">
+					<img srcset="img/neighborhood-map-360w.jpg 360w,
+								 img/neighborhood-map-780w.jpg 780w,
+								 img/neighborhood-map-1024w.jpg 1024w"
+						 sizes="(max-width: 360px) 340px,
+						 		(max-width: 765px) 745px,
+						 		1024px" 
+						 src="img/neighborhood-map-1024w.jpg" alt="neighborhood_map_project">
+					<p>Neighborhood Map - <a href="https://omoosey.github.io/fend-neighborhood-map/">Link</a></p>
+				</div>
+				<div class="projectPreview arcadeGame">
+					<img srcset="img/arcade-game-360w.jpg 360w,
+								 img/arcade-game-780w.jpg 780w,
+								 img/arcade-game-1024w.jpg 1024w"
+						 sizes="(max-width: 360px) 340px,
+						 		(max-width: 765px) 745px,
+						 		1024px" 
+						 src="img/arcade-game-1024w.jpg" alt="arcade_game_project">
+					<p>Arcade Game Clone - <a href="https://omoosey.github.io/fend-project-arcade-game/">Link</a></p>
+				</div>
+			</section>
+		</section>
 	<a id="contact"></a>
 	<div class="page">
 		<ul class="contactLinks">
@@ -61,6 +89,7 @@
 			<li><a href="mailto:msalamancajr@gmail.com"><i class="fas fa-envelope social fa-5x"></i>msalamancajr@gmail.com</a></li>
 			<li><a href="https://github.com/omoosey"><i class="fab fa-github-square social fa-5x"></i>https://github.com/omoosey</a></li>
 		</ul>
-	</div>		
+	</div>
+	<script type="text/javascript" src="./main.js"></script>		
 </body>
 </html>
