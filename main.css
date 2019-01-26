@@ -3,20 +3,22 @@
 body {
 	position: relative;
 	margin: 0px;
+	/*width: 100vw;*/
 }
 
 nav {
 	position: fixed;
 	background: rgba(0, 150, 0, 1);
 	z-index: 99;
-	width: 100%;
+	width: 100vw;
 	min-height: 50px;
 	color: white;
+	top: 0px;
 }
 
 
 
-.links img {
+.hidden {
 	display: none;
 }
 
@@ -35,12 +37,20 @@ nav {
 
 
 
-#navLinks a, .links a {
+#navLinks a {
 	text-decoration: none;
 	color: white;
+	min-width: 48px;
+	min-height: 48px;
+	text-align: center;
+
 }
 
-#navLinks a:hover, .links i:hover {
+#navLinks a i {
+	font-size: 25px;
+}
+
+#navLinks a:hover {
 	text-decoration: none;
 	color: black;
 }
@@ -51,7 +61,7 @@ nav {
 
 
 .splash {
-	top: 48px;
+	/*top: 48px;*/
 	background-image: url("https://images.unsplash.com/photo-1498910265115-9fb541931cd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b93ef63d91fab0386964e7e1ed2a971e&auto=format&fit=crop&w=1989&q=80");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -60,26 +70,32 @@ nav {
 }
 
 .center {
-	position: absolute;
+	position: relative;
 	top: 50%;
-	
-	/*left: 50%;*/
 	transform: translateY(-50%);
 	font-family: 'Proza Libre', serif;
-	/*font-size: 1.5em;*/
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 75%;*/
 }
 
 .center h6 {
 	position: relative;
-	left: 50%;
+	margin-left: 20%;
 	font-family: 'Cormorant Garamond';
+	/*width: 50%;*/
 	/*font-size: 1.25em;*/
-	margin-top: 10px;
+	/*margin-top: 10px;*/
+	/*margin-right: 0px;*/
+}
+
+.center ul {
+	text-align: left;
 }
 
 .about {
 	top: 48px;
-
 }
 
 
@@ -92,9 +108,15 @@ nav {
 }
 
 
+/*.links {
+	padding-top: 48px;
+}*/
 
 .contactLinks {
+	position: relative;
 	list-style-type: none;
+	/*pading-top: 50px;*/
+	top: 48px;
 
 }
 
@@ -103,7 +125,7 @@ nav {
 }
 
 .contactLinks li i {
-	margin: auto 75px auto auto;
+	margin: auto 10px auto auto;
 }
 
 .contactLinks li a {
