@@ -39,7 +39,7 @@ nav {
 	line-height: 48px;	
 }
 
-#navLinks li a {
+#navLinks li a, .links a {
 	text-decoration: none;
 	color: white;
 }
@@ -63,7 +63,7 @@ nav {
 
 }
 
-#intro {
+.center {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -72,7 +72,7 @@ nav {
 	font-size: 1.5em;
 }
 
-#intro h6 {
+.center h6 {
 	position: relative;
 	left: 50%;
 	font-family: 'Cormorant Garamond';
@@ -82,14 +82,9 @@ nav {
 
 .about {
 	top: 48px;
-	transform: perspective(400px) rotateY(45deg);
 
 }
 
-#gwg {
-	height: 200px;
-	width: 200px;
-}
 
 .page {
 	position: relative;
@@ -102,9 +97,7 @@ nav {
 
 
 .contactLinks {
-	position: absolute;
 	list-style-type: none;
-	top: 48px;
 }
 
 .contactLinks li {
@@ -131,7 +124,11 @@ nav {
 }
 
 .projectPreview {
-	width: 50%;
+	width: 100%;
+}
+
+strong {
+	font-size: 18px;
 }
 
 img {
